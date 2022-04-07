@@ -1,0 +1,57 @@
+/* Style Sheet If You Build It (table), They Will Come */
+/* Name: Sagan Foster                                       */
+
+/* Gradient target HTML body element tag */
+
+body{
+    background-image: linear-gradient(to right, rgb(0, 127, 127), rgb(127, 0, 127));
+    height: 98vh;
+    width: 98vw;
+}
+
+/* css target tableStyle class in HTML */
+.tableStyle{
+    border: 5px solid rgb(0, 127, 127);
+    width: 95%;
+    margin:auto;
+    margin-bottom: 3em;
+    background-color: #606060;
+}
+
+
+/* css target HTML Table caption tag */
+caption{
+    font-size: 2em;
+    color: white;
+    margin:auto;
+}
+
+
+/* css target HTML Table thead tag */
+ thead{
+    background-color: white;
+    text-align:left;
+    font-size: 1.5em;
+ }
+ 
+ 
+/* css target HTML Table tfoot tag */
+ tfoot{
+    background-color: white;
+    font-size: 2em;
+    text-align:center;
+ }
+ 
+ 
+/* Add a pseudo-class selector (page 320) */
+/* For example --  :nth-child(even)       */
+ tr:nth-child(even){
+    background-color: rgb(200, 225, 255);
+ }
+ 
+ 
+/* use colgroup */
+.colgroup{
+    background-color: rgb(200, 127, 200);
+}
+/* Week 3, Wednesday Video Lesson Chapter 8 folder - Table Column Group, page 173 */
