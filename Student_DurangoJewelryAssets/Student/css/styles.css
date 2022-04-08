@@ -1,0 +1,68 @@
+
+/* Sagan Foster April 8 */
+
+html{
+	background-image:url(../images/jewelry.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@font-face{
+	font-family: 'alexbrush';
+    src: url('../fonts/alexbrush-regular-webfont.woff') format('woff'),
+         url('../fonts/alexbrush-regular-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.addrightmargin{
+	margin-right: 10%;
+}
+#outerwrapper {	
+	border-radius: 15%;
+	background: rgba(243,205,170, 0.4);
+	width: 70%;
+	margin: auto;
+}
+
+img{
+	float:left;
+	border-radius: 50%;
+}
+
+h1{
+	font-family: 'Pacifico', cursive;
+	font-size: 4em;
+}
+h2{
+	font-family: 'alexbrush', cursive;
+	font-style: italic;
+	font-size: 2em;
+}
+
+nav{
+	font-size: 1.5em;
+	clear: both;
+}
+
+nav ul li{
+	list-style: none;
+}
+
+main{
+	background: linear-gradient(#ffffff, #f0f9e6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+footer{
+	font-size: 1em;
+	text-align: center;
+	padding: 10px;
+}
+
+
