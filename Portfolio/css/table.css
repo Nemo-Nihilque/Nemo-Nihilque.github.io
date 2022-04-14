@@ -1,0 +1,41 @@
+table{
+    border: 2px solid rgb(127, 127, 127);
+    border-radius:1em;
+    width: 95%;
+    margin:auto;
+    margin-bottom: .5em;
+}
+
+caption{
+    font-size: 3em;
+}
+
+thead{
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+tbody{
+    font-size: 1.25em;
+}
+
+th{
+    padding: 10px 0 10px 0;
+}
+
+td{
+    padding: 10px 0 10px 0;
+}
+
+tbody tr:nth-child(odd) {
+    background: rgba(63, 63, 63, .5);
+}
+
+tbody tr:nth-child(even){
+    background-color: rgba(127, 127, 127, .5);
+ }
+
+tfoot{
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, .5);
+}
