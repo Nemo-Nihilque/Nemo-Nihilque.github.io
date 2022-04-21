@@ -29,13 +29,16 @@ nav ul {
     padding: 0;
 }
 
-nav li{
-	display: inline;
-}
-
 nav a
 { 
 	text-decoration: none; 
+}
+
+h2{
+	display: none;
+}
+img{
+	display: none;
 }
 
 h1 
@@ -89,20 +92,9 @@ footer{
 	background-image: linear-gradient(#ffffff, #90C7E3);
 }
 
-@media (max-width: 640px){
-	nav{
-		display: block;
-	}
-	h2{
-		display: none;
-	}
-	img{
-		display: none;
-	}
-	nav ul li{
-		display:list-item;
-	}
-}
+/************************************
+Tablet view width
+*************************************/
 
 @media (min-width: 641px){
 	nav{
