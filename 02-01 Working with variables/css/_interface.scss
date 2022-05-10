@@ -18,6 +18,7 @@ $color-btn-cool: $blue;
 }
 
 .btn-default{
+    @extend %btn;
     background: $color-btn-default;
 }
 
