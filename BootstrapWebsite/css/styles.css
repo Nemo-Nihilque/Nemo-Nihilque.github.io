@@ -73,25 +73,11 @@ html[xmlns] .clearfix {
     width: 85%;
 }
 
-#menu{
-    height: 2600px;
-}
-
-#menu1 {
-    float: left;
-}
-#menu2 {
-    float: left;
-}
-#menu3 {
-    clear: left;
-    float: left;
-}
-#menu4 {
-    float: left;
-}
-#menu5 {
-    float: left;
+#menuBreakfast, #menuLunch{
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    float:left
 }
 
 main{
@@ -103,7 +89,7 @@ h2{
 }
 
 main img{
-    width: 50%;
+    width: 100%;
 }
 
 footer p{
@@ -114,3 +100,11 @@ footer address{
     margin: 0;
 }
 
+/****************************************
+Mobile view width
+*****************************************/
+@media(max-width: 641px){
+    #menuBreakfast, #menuLunch{
+        width: 100%;
+    }
+}
