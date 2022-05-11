@@ -1,0 +1,116 @@
+main{
+    padding: 0!important;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+ 
+.clearfix {
+    display: inline-block;
+}
+
+html[xmlns] .clearfix {
+    display: block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.navbar-brand{
+    font-size: 2em;
+}
+.lobster{
+    font-family: 'Lobster', cursive;
+}
+.lead{
+    font-size: 1.5em;
+}
+.baloo{
+    font-family: 'Baloo 2', cursive;
+}
+
+.bg-red{
+    background: #ff4444;
+}
+
+.nav-link{
+    color: white!important;
+}
+
+.nav-link:hover{
+    color: black!important;
+}
+
+.hero{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.3)), url(../images/FoodOnPlates.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 0;
+}
+
+.welcome{
+    background-position: absolute;
+}
+
+.active{
+    color: black!important;
+}
+
+#map, #menu{
+    padding: 40px;
+}
+
+#mapImg{
+    width: 85%;
+}
+
+#menu{
+    height: 2600px;
+}
+
+#menu1 {
+    float: left;
+}
+#menu2 {
+    float: left;
+}
+#menu3 {
+    clear: left;
+    float: left;
+}
+#menu4 {
+    float: left;
+}
+#menu5 {
+    float: left;
+}
+
+main{
+    clear: left;
+}
+
+h2{
+    font-size: 3em;
+}
+
+main img{
+    width: 50%;
+}
+
+footer p{
+    margin: 0;
+    padding: 4px;
+}
+footer address{
+    margin: 0;
+}
+

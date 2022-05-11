@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- Sagan Foster May 10 -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="The Chef's Hut home page">
+  <meta name="keywords" content="Bootstrap, The Chef's Hut, breakfast, brunch">
+  <meta name="author" content="Sagan Foster">
+  <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  <link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Bootstrap Icons -->	
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+  <!-- Style sheet -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+  <title>The Chef's Hut | Home</title>
+</head>
+
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+<!-- Bootstrap Navigation bar -->
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top bg-red" id="navbar">
+  <a class="navbar-brand lobster" href="#home">The Chef's Hut Restaurant</a>
+  
+  <!-- Hamburger menu icon -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+      <li class="nav-item"><a class="nav-link" href="#map">Map</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://thechefshut.menufy.com/#/" target="_blank">Order Online</a></li>
+      <li class="nav-item"><a class="nav-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdsVSkvIWy2T61ANcQc4hHoLlDVF_rBYbCtvsVW_rtchxNgRg/viewform" target="_blank">Apply Online</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<!-- Header and Hero Image -->
+<header class="jumbotron jumbotron-fluid hero text-center" id="home">
+  <div class="container welcome">
+    <h1 class="display-1 font-weight-bolder lobster">The Chef's Hut</h1>
+    <p class="lead font-weight-bold baloo">Boise's Best kept Secret Since 1974</p>
+
+    <!-- Begin Modal  -->
+    <button type="button" class="btn btn-outline-secondary btn-lg text-white bg-dark" data-toggle="modal" data-target="#eventModal">
+      Hours
+    </button>
+    <!-- Modal  -->
+    <div class="modal fade" id="eventModal" tabindex="-1" aria-labelledby="eventModalLabel" aria-hidden="true">
+      <!-- Vertically centered -->
+      <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="eventModal">Hours</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <!-- Modal Body -->
+        <div class="modal-body text-center">
+          <p>Tuesday - Sunday</p>
+          <p>7am - 2pm</p>
+        </div>
+      </div>
+      </div>
+    </div> <!-- end Modal -->
+  </div>
+</header>
+
+
+
+<!-- Main Content Area -->
+<main class="container-fluid text-center">
+  <section id="menu" class="clearfix">
+    <h2 class="lobster">Menu</h2>
+    <img src="images/menu1.png" alt="Chef's hut breakfast menu page 1" id="menu1">
+    <img src="images/menu4.png" alt="Chef's hut lunch menu page 1" id="menu2">
+    <img src="images/menu2.png" alt="Chef's hut breakfast menu page 2" id="menu3">
+    <img src="images/menu5.png" alt="Chef's hut lunch menu page 2" id="menu4">
+    <img src="images/menu3.png" alt="Chef's hut beverage menu" id="menu5">
+  </section>
+  <section id="map" class="bg-dark text-white">
+    <h2 class="lobster">Map</h2>
+    <img src="images/map.png" alt="Map showing the chef's hut" id="mapImg">
+  </section>
+</main>
+
+
+
+<!-- Footer -->
+<footer class="jumbotron-fluid text-center bg-red">
+  <div class="container text-white">
+    <p><address>164 S Cole Rd Boise, ID 83709</address></p>
+    <p>
+      <a href="tel:+12083763125"><i class="bi bi-telephone px-4" style="font-size: 2.5rem; color: white; vertical-align: -.3em"></i></a>
+      <a href="https://www.facebook.com/ChefsHutRestaurant/" target="_blank"><img src="images/facebookLogo.png" alt="Facebook logo"></a>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <a href="https://www.instagram.com/thechefshut/" target="_blank"><img src="images/instagramLogo.png" alt="Instagram logo"></a>
+      <a href="mailto:chefshut@gmail.com"><i class="bi bi-envelope px-4" style="font-size: 2.5rem; color: white; vertical-align: -.3em"></i></a>
+    </p>
+    <p>&copy; 2022 by The Chef's Hut.</p>
+  </div>
+</footer>
+</body>
+</html>
