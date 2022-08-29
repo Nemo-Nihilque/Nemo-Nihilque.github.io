@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Sagan Foster -->
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="PLC Landing page">
+    <meta name="keywords" content="trash cleanup, litter cleanup, parkinglot">
+    <meta name="author" content="Sagan Foster">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/landingStyles.css">
+    <link rel="stylesheet" href="js/landing.js">
+
+    <title>PLC: Landing</title>
+</head>
+
+<main>
+<body class="center white">
+    <h1>Welcome to Parking Lot Cleanup</h1>
+    <a href="home.html">Home Page</a>
+
+    <div id="estimator">
+        <h2>Get an estimated cost for picking up your lot</h2>
+
+        <!-- Price Estimator Form Field -->
+        <form id="sqrFootForm" name="sqrFootForm" action="" method="get">
+            <div>
+                <label for="sqrFootInput">Approximate Square Footage: </label>
+                <input type="text" id="sqrFootInput" name="sqrFootInput">
+                <span id="sqrFootOutput">Output</span>
+            </div>
+
+            <!-- Price Estimator Submit Button -->
+            <div>
+                <input type="button" value="Calculate" id="calculate">
+            </div>
+        </form>
+    </div>
+
+    
+</body>
+</main>
+<script src="js/landing.js"></script>
+
+</html>
