@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Universal Mod Log on index.html -->
+<html lang="en"> 
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="The Contact page of Sagan Foster's portfolio">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Sagan Foster, Portfolio">
+    <meta name="author" content="Sagan Foster">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>SF Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="outerwrapper"></div>
+        <header class="center bad-script"> <!-- Header start -->
+            <nav>
+                <ul>
+                    <!-- index.html link, examples.html link, contact.html link -->
+                    <li><a href="index.html" class="neon-white neon-white-active">Bio</a></li>
+                    <li><a href="examples.html" class="neon-white neon-white-active">Examples</a></li>
+                    <li><a href="contact.html" class="neon-white neon-white-active">Contact</a></li>
+                </ul>
+            </nav>
+        </header> <!-- Header end -->
+
+        <main class="animatic"> <!-- Main start -->
+            <div class="center neon-white">
+                <h1>Contact Me</h1>
+                <form action="mailto:saganfoster@my.cwi.edu?subject=PersonalPortfolioMail" enctype="text/plain" method="POST">
+                    <fieldset>
+                        
+                        <!-- Dropdown field to select a subject -->
+                        <label for="subject">Subject</label> <br>
+                        <select name="subject" id="subject">
+                            <optgroup label="Subject">
+                                <option value="feedback">Feedback</option>
+                                <option value="jobInquiry">Job inquiry</option>
+                                <option value="other">Other</option>
+                            </optgroup>
+                        </select>
+                        <br><br>
+
+                        <!-- Radio button to select urgency -->
+                        <input type="radio" id="urgent" name="urgency" value="urgent">
+                        <label for="urgent">Urgent</label>
+                        <input type="radio" id="nonUrgent" name="urgency" value="nonUrgent">
+                        <label for="nonUrgent">Non Urgent</label>
+                        <br><br>
+
+                        <!-- Text field to enter name -->
+                        <label for="contact">Name</label><br>
+                        <input type="text" name="Name" size="25" id="contact">
+                        <br><br>
+
+                        <!-- Text area to type message -->
+                        <textarea cols="100" rows="10" name="comment"></textarea>
+                        <br>
+                        
+                        <!-- Button to submit (Opens email app and autofills data) -->
+                        <input type="submit" id="submit" value="Submit" class="btn">
+                    </fieldset>
+                 </form>
+                 <br><br>
+                 <p class="contact">Call/text: <a href="tel:+12084889411">(208) 488-9411</a><br>
+                 Email: <a href="mailto:saganfoster@my.cwi.edu">saganfoster@my.cwi.edu</a></p>
+            </div>
+        </main> <!-- Main end -->
+
+        <footer class="center bad-script"> <!-- Footer start -->
+            <div>
+                <!-- Github link, index.html link, linkdin link -->
+                <a href="https://github.com/Nemo-Nihilque/Nemo-Nihilque.github.io" target="_blank" class="neon-white neon-white-active"><img src="images/iconmonstr-github-1.svg" alt="Github logo"></a>
+                <a href="index.html" class="neon-white neon-white-active footer-mid-logo"><img src="images/SJFLogo.svg" alt="Personal logo of Sagan Foster" id="sjf-logo"></a>
+                <a href="https://www.linkedin.com/" target="_blank" class="neon-white neon-white-active"><img src="images/iconmonstr-linkedin-1.svg" alt="Linkedin logo"></a>
+            </div>
+        </footer> <!-- Footer end -->
+    
+</body>
+</html>
