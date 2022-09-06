@@ -6,6 +6,7 @@
     font-style: normal;
 }
 
+/* Sets the size and format of the body */
 body{
     background-color:black;
     margin:0;
@@ -20,6 +21,7 @@ body{
 
 /* ID */
 
+/* Targets the background of the page and sets it to a repeating radial pattern */
 #outerwrapper{
     position:fixed;
     background-color: black;
@@ -31,6 +33,7 @@ body{
     min-width: 98vw;
     min-height: 100vh;
 }
+/* Targets my logo on the bottom middle button */
 #sjf-logo{
     width: 30px;
 }
@@ -38,24 +41,26 @@ body{
 
 
 /* CLASS */
-
+/* Targets the call/text and email paragraph at the bottom of the contact page */
 .contact{
     font-size: 1.5em;
 }
 
+/* Applies the Bad Script font to targeted elements */
 .bad-script{
     font-family: 'Bad Script', 'Bradley Hand', 'Comic Sans MS', cursive;
 }
-
+/* Applies the Animatic font to targeted elements */
 .animatic{
     font-family: 'animatic', 'Bradley Hand', 'Comic Sans MS', cursive;
 }
 
-
+/* Centers targeted elements */
 .center{
     margin:auto;
 }
 
+/* Applies a neon-like frame and semi transparent background to targeted elements */
 .neon-white{
     border: 1px solid rgb(255, 255, 255);
     border-radius:1em;
@@ -64,6 +69,7 @@ body{
 
     color: rgb(255, 255, 255);
 }
+/* Causes targeted elements to brighten when hovered over */
 .neon-white:hover{
     border: 1px solid rgb(255, 255, 255);
     border-radius:1em;
@@ -72,6 +78,7 @@ body{
 
     color: rgb(255, 255, 255);
 }
+/* Targeted anchor tags will "turn off" like a neon light when clicked on */
 .neon-white-active:active{
     border: 1px solid rgb(85, 85, 85);
     border-radius:1em;
@@ -83,7 +90,9 @@ body{
 
 
 
-/* HEADER */
+/* 
+HEADER 
+*/
 
 header{
     width:95%;
@@ -124,11 +133,14 @@ header a{
 
 
 
-/* MAIN */
+/* 
+MAIN 
+*/
 
 main{
     z-index: 1;
 }
+/* Targeted divs will appear as a centered floating sign */
 div{
     margin: .5em auto .5em auto!important;
     padding: 1% 1% 1.75% 1%;
@@ -157,6 +169,7 @@ fieldset{
     font-size: 1.5em;
 }
 
+/* gives my name on index.html a fancy effect */
 span{
     text-shadow: 0 -3px 0 rgba( 255, 0, 0, .25), 
                 3px -1.5px 0 rgba( 255, 255, 0, .25), 
@@ -168,7 +181,9 @@ span{
 
 
 
-/* FOOTER */
+/* 
+FOOTER 
+*/
 
 img{
     width: 60px;
@@ -181,26 +196,25 @@ footer{
     
     z-index:2;
 }
+
+/* Targets the "nav buttons" in the footer */
 footer div {
     width: 50%;
     margin-top: 0!important;
     margin-bottom: 0!important;
     padding: 0 0 1px 0;
 }
-
 footer ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-
 footer li{
     margin: 0;
     border: 0;
     padding: 0;
     display: inline;
 }
-
 footer a{
     padding: 45px .75em 0 .75em;
     text-decoration: none;

@@ -10,6 +10,7 @@ caption{
     font-size: 3em;
 }
 
+/* Targets table head, applies black background */
 thead{
     font-size: 2em;
     background-color: rgba(0, 0, 0, .5);
@@ -19,22 +20,22 @@ tbody{
     font-size: 1.25em;
 }
 
-th{
-    padding: 10px 0 10px 0;
+th, td{
+    padding: 15px;
 }
 
-td{
-    padding: 10px 0 10px 0;
-}
-
+/* Targets odd body cells, applies dark gray background */
 tbody tr:nth-child(odd) {
     background: rgba(63, 63, 63, .5);
 }
 
+/* targets even body cells, applies light gray background */
 tbody tr:nth-child(even){
     background-color: rgba(127, 127, 127, .5);
  }
 
+
+ /* Targets table footer, applies black background */
 tfoot{
     font-size: 2em;
     background-color: rgba(0, 0, 0, .5);
