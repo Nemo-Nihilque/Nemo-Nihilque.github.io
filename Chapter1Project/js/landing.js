@@ -19,7 +19,7 @@ const calculate = evt => {
             style: "currency",
             currency: "USD"
         });
-        $("#sqrFootOutput").textContent = input + " Square Feet: " + dollarFormat.format((input / 5280) * 20); 
+        $("#sqrFootOutput").textContent = input + " Square Feet: " + dollarFormat.format((input / 5280) * 20 + 10); 
     }
 
     // cancel form submit if any user entries are invalid

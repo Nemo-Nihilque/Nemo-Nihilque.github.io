@@ -1,0 +1,146 @@
+body{
+    background-color: rgb(32, 32, 32);
+}
+
+
+
+/* 
+Classes 
+*/
+
+.center{
+    margin:auto;
+    text-align:center;
+}
+.white{
+    color: white;
+}
+
+
+/* 
+ID's 
+*/
+
+
+
+
+
+/* 
+Header
+*/
+
+nav{
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    background-color: rgb(16, 16, 16);
+    padding: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline;
+}
+
+header a{
+    padding: 0 .3em 0 .3em;
+    text-decoration: none;
+    color: rgb(255, 255, 0);
+    font-size: 3.5em;
+    border: 2px solid rgb(255, 255, 0);
+    background-color: rgba(127, 127, 0, .3);
+}
+header a:active{
+    color:rgba(127, 127, 0, .9);
+    border-color: rgba(127, 127, 0, .75);
+    background-color: rgba(127, 127, 0, 0.2);
+}
+
+
+
+/* 
+Main 
+*/
+
+main{
+    font-size: 2em;
+    padding: 1.5em 3.5em;
+}
+
+/* 
+Table 
+*/
+table{
+    font-size: 1.25em;
+    border: 3px solid rgb(255, 255, 0);
+}
+table thead{
+    background-color: rgb(16, 16, 16);
+    font-size: 1.5em;
+}
+th, tr, td{
+    padding: 15px;
+}
+table tbody tr:nth-child(odd) { /* Targets odd body cells */
+    background: rgba(200, 200, 200, 0.3);
+}
+table tbody tr:nth-child(even){ /* Targets even body cells */
+    background-color: rgba(100, 100, 100, 0.3);
+}
+table tfoot{
+    background-color: rgb(16, 16, 16);
+    font-size: 1.5em;
+}
+
+/* 
+Form 
+*/
+fieldset{
+    border: 3px solid rgb(255, 255, 0);
+    background-color: rgb(16, 16, 16);
+    padding-bottom: 40px;
+}
+fieldset textarea, fieldset input{
+    background-color: rgba(200, 200, 200, 0.3);
+    color: white;
+    font-size: .75em;
+}
+fieldset .btn{
+    color: rgb(255, 255, 255);
+    border-color: rgba(127, 127, 127, .75);
+    background-color: rgba(127, 127, 127, 0.2);
+}
+
+
+
+/* 
+Footer 
+*/
+
+footer{
+    background-color:rgba(127, 127, 0, 0.3);
+    margin-top: 2em;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+}
+
+footer img{
+    height: 64px;
+    margin: 10px 20px;
+}
