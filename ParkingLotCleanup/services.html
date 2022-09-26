@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!-- Sagan Foster -->
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta name="description" content="PLC Services Page">
+    <meta name="keywords" content="trash cleanup, litter cleanup, parkinglot">
+    <meta name="author" content="Sagan Foster">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/styles.css">
+
+
+    <title>PLC: Services</title>
+</head>
+<body class="center white">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Services</h1>
+        <p>I provide both trash cleanup and pressure washing services. <br>
+            Trash cleanup is on a weekly reoccuring schedule, while pressure washing is done on demand.
+        </p>
+        <br>
+        <h2>Trash Cleanup Cost Estimator</h2>
+        <div id="trashCost">
+            <label for="trashCostInput">Approx Sqr Footage: </label>
+            <input type="text" id="trashCostInput" name="trashCostInput">
+            <input type="button" value="Calculate Trash Cleanup Cost" id="trashCostCalc">
+            <br>
+            <span id="trashCostOutput">Trash Cleanup Cost Output</span>
+        </div>
+        <br>
+        <h2>Pressure Wash Cost Estimator</h2>
+        <div id="pressureCost">
+            <label for="pressureCostInput">Approx Sqr Footage: </label>
+            <input type="text" id="pressureCostInput" name="pressureCostInput">
+            <input type="button" value="Calculate Pressure Wash Cost" id="pressureCostCalc">
+            <br>
+            <span id="pressureCostOutput">Pressure Wash Cost Output</span>
+        </div>
+    </main>
+
+    <footer>
+        <address>
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="images/instagram-icon.png" alt="Instagram logo" class="footerIcon"></a></li>
+                <li><a href="https://www.tiktok.com/en/" target="_blank"><img src="images/tiktok-icon.webp" alt="Tiktok logo" class="footerIcon"></a></li>
+                <li><a href="https://twitter.com/" target="_blank"><img src="images/twitter-icon.png" alt="Twitter logo" class="footerIcon"></a></li>
+            </ul>
+        </address>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/services.js"></script>
+</html>

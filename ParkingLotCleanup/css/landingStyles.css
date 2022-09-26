@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    
+}
+main{
+    position:fixed;
+    background-size: 100vw+100vw;
+    
+    min-width: 100vw;
+    min-height: 100vh;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../images/parkingLot.jpg);
+}
+
+/* Classes */
+.center{
+    margin:auto;
+    text-align:center;
+}
+.white{
+    color: white;
+}
+
+/* Id's */
+#estimator{
+    margin-top: 50px;
+    background-color: rgba(200, 200, 200, 0.3);
+    padding: 10px;
+}
+
+/* Headers */
+h1{
+    padding-top: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 40px;
+    font-size: 10em;
+}
+
+h2{
+    margin-top: 10px;
+    margin-bottom: 25px;
+    font-size: 3em;
+}
+
+
+/* Misc */
+form{
+    font-size: 2em;
+}
+
+input{
+    font-size:.75em;
+}
+
+div{
+    margin: 10px;
+}
+
+a{
+    font-size: 5em;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background-color: rgba(200, 200, 200, 0.3);
+}
+
+@media(max-height: 900px){
+    h1{
+        margin: 0;
+        padding: 15px 0;
+        font-size: 3em;
+    }
+    a{
+        font-size: 2em;
+    }
+    div{
+        font-size: .75em;
+    }
+
+}

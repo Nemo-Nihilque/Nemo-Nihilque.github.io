@@ -1,0 +1,95 @@
+main{
+    height: 400px;
+    margin: 0 10vw;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* Carousel css */
+#faqCarouselImgList li img{
+    width: 490px;
+}
+#faqCarouselLeft a, #faqCarouselRight a{
+	padding: 163px 15px;
+	float: left;
+
+    color: black;
+    text-decoration: none;
+    font-size: 2em;
+
+    background-color:rgba(127, 127, 0, 0.3);
+}
+#faqCarouselLeft a:hover, #faqCarouselRight a:hover{
+    background-color:rgb(255, 255, 0);
+}
+#faqCarouselImgList{
+    height: 400px;
+	width: 500px;
+	overflow: hidden;
+	float: left;
+
+    background-color: rgb(16, 16, 16);
+}
+#faqCarouselImgList ul{
+    margin-top: 16px;
+    left: 0px;
+    padding: 0px;
+	position: relative;   
+    width: 2500px;
+    list-style: none;  
+}
+#faqCarouselImgList li{
+    float: left;
+	width: 500px;
+    height: 400px;
+    margin-top: auto;
+}
+
+/* Dropdown css */
+#faqs{
+    float: right;
+    padding: 15px;
+    border: 2px solid rgb(255, 255, 0);
+    width: 35vw;
+    background-color: rgb(16, 16, 16);
+}
+#faqs a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+#faqs a:hover{
+    color:rgb(255, 255, 0);
+}
+
+#faqs dd{
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+@media(max-width: 1590px){
+    main{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #faqCarousel{
+        text-align: center;
+        height: 400px;
+        width: 633px;
+        margin: auto;
+    }
+    #faqs{
+        float:left;
+        width: 97.75vw;
+    }
+}
+
+@media(max-width: 632px){
+    #faqCarouselLeft a, #faqCarouselRight a{
+        padding: 0px;
+
+        width: 99.5vw;
+    
+        font-size: 2em;
+    }
+}

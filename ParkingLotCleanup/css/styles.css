@@ -1,0 +1,143 @@
+body{
+    background-color: rgb(32, 32, 32);
+}
+
+
+
+/* 
+Classes 
+*/
+
+.center{
+    margin:auto;
+    text-align:center;
+}
+.white{
+    color: white;
+}
+
+
+/* 
+ID's 
+*/
+
+
+
+
+
+/* 
+Header
+*/
+
+nav{
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    background-color: rgb(16, 16, 16);
+    padding: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    display: inline;
+}
+
+header a{
+    padding: 0 .3em 0 .3em;
+    text-decoration: none;
+    color: rgb(255, 255, 0);
+    font-size: 3.5em;
+    border: 2px solid rgb(255, 255, 0);
+    background-color: rgba(127, 127, 0, .3);
+}
+header a:active{
+    color:rgba(127, 127, 0, .9);
+    border-color: rgba(127, 127, 0, .75);
+    background-color: rgba(127, 127, 0, 0.2);
+}
+
+
+
+/* 
+Main 
+*/
+
+main{
+    font-size: 2em;
+    padding: 1.5em 3.5em;
+}
+
+
+
+/* 
+Form 
+*/
+fieldset{
+    border: 3px solid rgb(255, 255, 0);
+    background-color: rgb(16, 16, 16);
+    padding-bottom: 40px;
+}
+fieldset textarea, fieldset input{
+    background-color: rgba(200, 200, 200, 0.3);
+    color: white;
+    font-size: .75em;
+}
+fieldset .btn{
+    color: rgb(255, 255, 255);
+    border-color: rgba(127, 127, 127, .75);
+    background-color: rgba(127, 127, 127, 0.2);
+}
+
+
+
+/* 
+Footer 
+*/
+
+footer{
+    background-color:rgba(127, 127, 0, 0.3);
+    margin-top: 2em;
+    clear: both;
+    margin-top: 15px;
+}
+
+footer ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    display: inline;
+}
+
+footer img{
+    height: 64px;
+    margin: 10px 20px;
+}
+
+/* Media tags */
+@media(max-width: 632px){
+    main{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 5px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    header a{
+        margin-bottom: 105px;
+        font-size: 1.5em;
+    }
+
+
+}
