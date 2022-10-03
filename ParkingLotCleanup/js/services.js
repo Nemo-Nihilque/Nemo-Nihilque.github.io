@@ -15,11 +15,15 @@ const trashCalc = evt => {
         $("#trashCostOutput").textContent = "Please enter a number.";
         isValid = false;
     } else { 
-        let dollarFormat = Intl.NumberFormat('en-US', {
-            style: "currency",
-            currency: "USD"
-        });
-        $("#trashCostOutput").textContent = input + " Cost: " + dollarFormat.format((input / 5280) * 20 + 30); 
+        if(input <= 0){
+            $("#trashCostOutput").textContent = "Please input a square footage greater than 0.";
+        }else{
+            let dollarFormat = Intl.NumberFormat('en-US', {
+                style: "currency",
+                currency: "USD"
+            });
+            $("#trashCostOutput").textContent = input + " Cost: " + dollarFormat.format((input / 5280) * 75 + 25); 
+        }
     }
 
     // cancel form submit if any user entries are invalid
@@ -43,11 +47,15 @@ const pressureCalc = evt => {
         $("#pressureCostOutput").textContent = "Please enter a number.";
         isValid = false;
     } else { 
-        let dollarFormat = Intl.NumberFormat('en-US', {
-            style: "currency",
-            currency: "USD"
-        });
-        $("#pressureCostOutput").textContent = input + " Cost: " + dollarFormat.format((input / 5280) * 100 + 50); 
+        if(input <= 0 ){
+            $("#pressureCostOutput").textContent = "Please input a square footage greater than 0.";
+        } else{
+            let dollarFormat = Intl.NumberFormat('en-US', {
+                style: "currency",
+                currency: "USD"
+            });
+            $("#pressureCostOutput").textContent = input + " Cost: " + dollarFormat.format((input / 5280) * 1975 + 25); 
+        }
     }
 
     // cancel form submit if any user entries are invalid
