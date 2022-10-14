@@ -11,19 +11,15 @@ const trashCalc = evt => {
     
     // calculate and output
     let isValid = true;
-    if (isNaN(input)) { 
-        $("#trashCostOutput").textContent = "Please enter a number.";
+    if(!/^[1-9][0-9]*$/.test(input)){
+        $("#trashCostOutput").textContent = "Please enter a number greater than zero.";
         isValid = false;
-    } else { 
-        if(input <= 0){
-            $("#trashCostOutput").textContent = "Please input a square footage greater than 0.";
-        }else{
-            let dollarFormat = Intl.NumberFormat('en-US', {
-                style: "currency",
-                currency: "USD"
-            });
-            $("#trashCostOutput").textContent = input + " Cost: " + dollarFormat.format((input / 5280) * 75 + 25); 
-        }
+    } else {
+        let dollarFormat = Intl.NumberFormat('en-US', {
+            style: "currency",
+            currency: "USD"
+        });
+        $("#trashCostOutput").textContent = input + " Cost: " + dollarFormat.format((input / 5280) * 75 + 25);
     }
 
     // cancel form submit if any user entries are invalid
@@ -43,19 +39,15 @@ const pressureCalc = evt => {
     
     // calculate and output
     let isValid = true;
-    if (isNaN(input)) { 
-        $("#pressureCostOutput").textContent = "Please enter a number.";
+    if(!/^[1-9][0-9]*$/.test(input)){
+        $("#pressureCostOutput").textContent = "Please enter a number greater than zero.";
         isValid = false;
-    } else { 
-        if(input <= 0 ){
-            $("#pressureCostOutput").textContent = "Please input a square footage greater than 0.";
-        } else{
-            let dollarFormat = Intl.NumberFormat('en-US', {
-                style: "currency",
-                currency: "USD"
-            });
-            $("#pressureCostOutput").textContent = input + " Cost: " + dollarFormat.format((input / 5280) * 1975 + 25); 
-        }
+    } else {
+        let dollarFormat = Intl.NumberFormat('en-US', {
+            style: "currency",
+            currency: "USD"
+        });
+        $("#pressureCostOutput").textContent = input + " Cost: " + dollarFormat.format((input / 5280) * 1975 + 25);
     }
 
     // cancel form submit if any user entries are invalid

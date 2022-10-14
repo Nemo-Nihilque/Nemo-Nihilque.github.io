@@ -11,10 +11,10 @@ const newsletter = evt => {
     
     // varify
     let isValid = true;
-    if (input.length < 11 || input.substring(input.length-10) != "@gmail.com") { 
-        $("#h1Newsletter").textContent = "Email must be at least 11 characters long, and hosted @gmail.com";
+    if(!/^\w+@\w+\.\w{3}$/.test(input)) {
+        $("#h1Newsletter").textContent = "Please enter a valid email.";
         isValid = false;
-    } else { 
+    } else{
         $("#h1Newsletter").textContent = "Thank you for signing up for our newsletter " + input + "!";
     }
 
@@ -31,14 +31,15 @@ const contact = evt =>{
     const nameIn = $("#name").value;
     const subjectIn = $("#subject").value;
     const textIn = $("#textareaContact").value;
+    const currentDate = new Date();
 
     // calculate and output
     let isValid = true;
-    if (nameIn == "" || subjectIn == "" || textIn == "") { 
+    if (!/^\b\w+\b( \b\w+\b)*$/.test(nameIn) || !/^\b\w+\b( \b\w+\b)*$/.test(subjectIn) || !/\w+/.test(textIn)) { 
         $("#h1Contact").textContent = "Please make sure all fields are filled";
         isValid = false;
     } else { 
-        $("#h1Contact").textContent = "Thank you for contacting us " + nameIn + ".";
+        $("#h1Contact").textContent = "Thank you " + nameIn + " for contacting us on " + currentDate.toDateString() + ".";
     }
 
     // clear text box

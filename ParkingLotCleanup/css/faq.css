@@ -80,16 +80,16 @@ main{
     }
     #faqs{
         float:left;
-        width: 97.75vw;
+        width: 94.5vw;
     }
 }
 
 @media(max-width: 632px){
-    #faqCarouselLeft a, #faqCarouselRight a{
-        padding: 0px;
-
-        width: 99.5vw;
-    
-        font-size: 2em;
+    #faqCarousel{
+        display: none;
+    }
+    #faqs{
+        float: left;
+        width: 90vw;
     }
 }
