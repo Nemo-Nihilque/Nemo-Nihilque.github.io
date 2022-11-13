@@ -3,19 +3,19 @@ html, body{
 }
 
 #Home{
-    background-image: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25)), url("/images/1800.jpg");
+    background-image: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25)), url("../images/1800.jpg");
 }
 #Negotiating{
-    background-image: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25)), url("/images/Goose_Honk.webp");
+    background-image: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25)), url("../images/Goose_Honk.webp");
 }
 #Grooming{
-    background-image: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25)), url("/images/goosewalk.jpg");
+    background-image: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25)), url("../images/goosewalk.jpg");
 }
 #About{
-    background-image: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25)), url("/images/gooseanatomy.jpg");
+    background-image: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25)), url("../images/gooseanatomy.jpg");
 }
 #Contact{
-    background-image: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25)), url("/images/phonebooth.jpg");
+    background-image: radial-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.25)), url("../images/phonebooth.jpg");
 }
 
 .parallax {
